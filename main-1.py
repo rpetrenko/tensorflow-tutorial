@@ -7,8 +7,16 @@ def generate_linear_points(w, b, n):
     f = lambda x: x * w + b
     return x, [f(a) for a in x]
 
-sess = tf.Session()
+# Creates a graph.
+# a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
+# b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
+# c = tf.matmul(a, b)
+# Runs the op.
+# config = tf.ConfigProto(log_device_placement=True)
+# sess = tf.Session(config=config)
+# print(sess.run(c))
 
+sess = tf.Session()
 node1 = tf.constant(3.0, tf.float32)
 node2 = tf.constant(4.0) # tf.float32 is default
 print(node1, node2)

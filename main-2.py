@@ -7,7 +7,6 @@
 import tensorflow as tf
 import numpy as np
 
-
 features = [tf.contrib.layers.real_valued_column('x', dimension=1)]
 estimator = tf.contrib.learn.LinearRegressor(feature_columns=features)
 x = np.array([1.,2.,3.,4.])
